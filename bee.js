@@ -7,7 +7,7 @@ var backgroundLogo;
 
 var blimp;
 var blimpX = 790;
-var blimpY = 125;
+var blimpY = 70;
 var blimpDirection = -1;
 
 var bee1Xarray = [];
