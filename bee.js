@@ -15,6 +15,7 @@ var bee1Yarray = [];
 
 var bee2Xarray = [];
 var bee2Yarray = [];
+let timer = 19
 
 function preload() {
   backgroundLogo = loadImage("assets/background_logo.png");
@@ -38,7 +39,23 @@ function setup() {
 
 }
 function draw() {
-    displayThankYouPage();
+  displayThankYouPage();
+
+  textAlign(CENTER, CENTER);
+  textSize(25);
+  text("Days", width/1.48, height/1.95);
+  textSize(50);
+  text(timer, width/2, height/2);
+
+  if (frameCount % 98496000 == 0 && timer > 0) {
+  timer --;
+}
+  if (timer == 0) {
+  textSize(25);
+  text("Sheldon + Phuong = 3", width/2, height*0.6);
+
+}
+
 }
 function displayThankYouPage() {
   image(backgroundLogo, width / 2, height / 2, width, height);
