@@ -47,7 +47,7 @@ function draw() {
   textSize(50);
   text(timer, width/2, height/2);
 
-  if (frameCount % 98496000 == 0 && timer > 0) {
+  if (frameCount % 97200000 == 0 && timer > 0) {
   timer --;
 }
   if (timer == 0) {
